@@ -260,10 +260,12 @@ public class LiamHoodBallThrowingSimulatorBall extends JFrame implements ActionL
     
     public double computeDistance(double xVelocity, double yVelocity, double gravityValue)
     {
-        
         double timeInFlight = (yVelocity * 2)/gravityValue;
+        //computes the time during which the projectile is in the air
         double xTraversed = timeInFlight * xVelocity;
+        //utilizing the x-component of velocity and the time during which the projectile is in the air, computes the x-displacement undergone by the projectile
         return xTraversed;
+        //returns 'xTraversed'
     }
     
     public static int targetGen()
@@ -640,10 +642,13 @@ public class LiamHoodBallThrowingSimulatorBall extends JFrame implements ActionL
    {
        return xTraversed;
    }
+   //retrieves the value for 'xTraversed'
+   
    public void setXTraversed(double xTraversed)
    {
        this.xTraversed = xTraversed;
    }
+   //sets the value for 'xTraversed'
 }
 /*
 Target: 98m
